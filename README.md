@@ -18,17 +18,17 @@ Please follow the below instructions to run this project in your computer:
 
 1. Clone this repository
    ```sh
-   git clone https://github.com/learnwithsumit/think-in-a-react-way.git
+   git clone https://github.com/meXuvo/react.git
    ```
-2. Checkout to branch "lesson-3"
+2. Change directory
    ```sh
-   git checkout lesson-3
+   cd react
    ```
 3. Run
    ```sh
    yarn
    ```
-4. Your app should be available in http://localhost:5500
+4. yarn start
 
 <!-- Editor Setup -->
 
@@ -42,7 +42,6 @@ You need to install the below plugins:
 
 - ESLint by Dirk Baeumer
 - Prettier - Code formatter by Prettier
-- Dracula Official Theme (optional)
 
 ### Settings
 
@@ -55,7 +54,7 @@ Follow the below settings for VS Code -
 ```json
 {
   // Theme
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula", //anythig as your favorite
 
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -84,12 +83,6 @@ Follow the below settings for VS Code -
 ```
 
 If you followed all previous steps, the theme should change and your editor should be ready.
-
-### Set Line Breaks
-
-Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF (Carriage return and line feed). To do that, just click LF/CRLF in bottom right corner of editor, click it and change it to "LF". If you dont do that, you will get errors in my setup.
-
-<img src="public/line-feed.jpg" alt="Line Feed" width="700">
 
 ## Linting Setup
 
