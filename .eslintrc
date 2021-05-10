@@ -17,6 +17,8 @@
     "jest": true
   },
   "rules": {
+    "jsx-eslint/eslint-plugin-jsx-a11y": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
     "jsx-a11y/no-onchange": 0,
     "react/react-in-jsx-scope": 0,
     "react-hooks/rules-of-hooks": "error",

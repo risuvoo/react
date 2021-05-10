@@ -1,4 +1,5 @@
 import ClickCounter from './Components/ClickCounter';
+import HoverCounter from './Components/HoverCounter';
 
 function App() {
     return (
@@ -14,7 +15,10 @@ function App() {
         //     </Emoji>
         // </div>
 
-        <ClickCounter />
+        <>
+            <ClickCounter />
+            <HoverCounter />
+        </>
     );
 }
 
