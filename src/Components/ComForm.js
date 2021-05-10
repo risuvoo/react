@@ -8,20 +8,20 @@ class ComForm extends Component {
             address: '',
             technology: '',
             goodBoy: false,
+            getData: null,
         };
     }
 
     submitForm = (e) => {
-        const { value, address, technology, goodBoy } = this.state;
         e.preventDefault();
-        console.log(
-            `my name is ${value}. i from ${address}. my favorite framwork is ${technology}. ${goodBoy}ly i am good boy`
-        );
+        const { value, address, technology, goodBoy } = this.state;
         this.setState({
-            value: '',
-            address: '',
-            technology: '',
-            goodBoy: '',
+            getData: {
+                value,
+                address,
+                technology,
+                goodBoy,
+            },
         });
     };
 
@@ -48,7 +48,7 @@ class ComForm extends Component {
     };
 
     render() {
-        const { value, address, technology, goodBoy } = this.state;
+        const { value, address, technology, goodBoy, getData } = this.state;
         return (
             <>
                 <div>
@@ -86,6 +86,14 @@ class ComForm extends Component {
                             <button type="submit"> submit</button>
                         </div>
                     </form>
+                    {getData && (
+                        <div>
+                            <p>{getData.value}</p>
+                            <p>{getData.address}</p>
+                            <p>{getData.technology}</p>
+                            <p>{getData.goodBoy}</p>
+                        </div>
+                    )}
                 </div>
             </>
         );
