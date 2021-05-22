@@ -1,10 +1,12 @@
-import withCounter from './HOC/withConter';
+import React from 'react';
 
-const clickCounter = ({ counter, handler }) => (
-    <div>
-        <button type="submit" onClick={handler}>
-            click {counter}
-        </button>
-    </div>
-);
-export default withCounter(clickCounter);
+function ClickCounter({ counter, handler }) {
+    return (
+        <div>
+            <button type="submit" onClick={handler}>
+                click {counter}
+            </button>
+        </div>
+    );
+}
+export default ClickCounter;

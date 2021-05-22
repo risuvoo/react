@@ -1,9 +1,10 @@
-import withCounter from './HOC/withConter';
+import React from 'react';
 
-const HoverCounter = ({ counter, handler }) => (
-    <div>
-        <span onMouseOver={handler}>hover counter {counter} </span>
-    </div>
-);
-
-export default withCounter(HoverCounter);
+function HoverCounter({ counter, handler }) {
+    return (
+        <div>
+            <span onMouseOver={handler}>hover counter {counter} </span>
+        </div>
+    );
+}
+export default HoverCounter;
