@@ -3,6 +3,8 @@ import React from 'react';
 class ComButton extends React.Component {
     // for not re-rendering Components
     shouldComponentUpdate(nextProps) {
+        // change props name with distructuring
+        // ex-> change: CurrentChange
         const { change: CurrentChange, local: CurrentLocal } = this.props;
         const { change: nextChange, local: nextLocal } = nextProps;
         if (CurrentChange === nextChange && CurrentLocal === nextLocal) {
