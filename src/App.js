@@ -1,8 +1,10 @@
 // import Clock from './Components/Clock';
-
-import MyCalculator from './Components/PracticeComponents/MyCalculator';
+import { useState } from 'react';
+import MyContextApi from './Components/MyContextApi';
 
 function App() {
+    const [name] = useState('suvo');
+    console.log(name);
     return (
         // <div className="hello">
         //     <Emoji>
@@ -16,7 +18,7 @@ function App() {
         //     </Emoji>
         // </div>
         <>
-            <MyCalculator />
+            {/* <MyCalculator /> */}
             {/* <Clock /> */}
 
             {/* <ClickCounter />
@@ -27,6 +29,7 @@ function App() {
             <Counter
                 render={(counter, handler) => <HoverCounter counter={counter} handler={handler} />}
             /> */}
+            <MyContextApi />
         </>
     );
 }
