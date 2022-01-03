@@ -1,10 +1,7 @@
 // import Clock from './Components/Clock';
-import { useState } from 'react';
 import MyContextApi from './Components/MyContextApi';
 
 function App() {
-    const [name] = useState('suvo');
-    console.log(name);
     return (
         // <div className="hello">
         //     <Emoji>
