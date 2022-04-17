@@ -1,6 +1,9 @@
 // import Clock from './Components/Clock';
 
-import MyUseEffect from './Components/Hooks/MyUseEffect';
+// import MyUseEffect from './Components/Hooks/MyUseEffect';
+
+import { Link } from 'react-router-dom';
+import Routers from './Routers';
 
 function App() {
     return (
@@ -28,7 +31,14 @@ function App() {
                 render={(counter, handler) => <HoverCounter counter={counter} handler={handler} />}
             /> */}
             {/* <MyContextApi /> */}
-            <MyUseEffect />
+            {/* <MyUseEffect /> */}
+
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/dashboard">dashboard</Link>
+                <Link to="/login">login</Link>
+            </nav>
+            <Routers />
         </>
     );
 }
