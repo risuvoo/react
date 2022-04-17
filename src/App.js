@@ -1,5 +1,6 @@
 // import Clock from './Components/Clock';
-import MyContextApi from './Components/MyContextApi';
+
+import MyUseEffect from './Components/Hooks/MyUseEffect';
 
 function App() {
     return (
@@ -26,7 +27,8 @@ function App() {
             <Counter
                 render={(counter, handler) => <HoverCounter counter={counter} handler={handler} />}
             /> */}
-            <MyContextApi />
+            {/* <MyContextApi /> */}
+            <MyUseEffect />
         </>
     );
 }
